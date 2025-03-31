@@ -118,3 +118,64 @@ aside {
         object-fit: cover;
     }
 }
+
+@media (width < 80em) {
+    body > header {
+        & strong {
+            display: none;
+        }
+    }
+
+    #featured {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .card {
+            width: auto;
+            margin: 1rem;
+        }
+
+        & div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    #weekly {
+        & > div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & figure {
+                width: auto;
+                margin: 1rem;
+            }
+            
+            & img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+            
+            & p {
+                max-width: 100%;
+                margin: 0 auto; /* Centers text if needed */
+                text-align: left;
+                word-wrap: break-word;
+            }
+        }
+    }
+
+    #ai article {
+        display: flex;
+        flex-direction: row-reverse;
+
+        & div:nth-child(2) {
+            width: 100%;
+        }
+    }
+
+}

@@ -76,3 +76,14 @@ main{
 
     box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.25);
 }
+
+@media (width < 80em) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "featured"
+        "weekly"
+        "ai"
+        "aside";
+    }
+}
